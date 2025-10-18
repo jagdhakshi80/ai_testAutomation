@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">test_report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">test_report.html</h1>
+    <p>Report generated on 18-Oct-2025 at 00:24:41 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">46 tests took 00:01:29.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">2 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">44 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" />
+            <span class="error">4 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.7&#34;, &#34;Platform&#34;: &#34;macOS-15.6.1-arm64-arm-64bit-Mach-O&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.4.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;asyncio&#34;: &#34;1.2.0&#34;, &#34;allure-pytest&#34;: &#34;2.15.0&#34;, &#34;anyio&#34;: &#34;4.11.0&#34;, &#34;variables&#34;: &#34;3.1.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;xdist&#34;: &#34;3.8.0&#34;, &#34;langsmith&#34;: &#34;0.4.37&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;playwright&#34;: &#34;0.7.1&#34;, &#34;selenium&#34;: &#34;4.1.0&#34;, &#34;testrail&#34;: &#34;2.9.0&#34;}, &#34;JAVA_HOME&#34;: &#34;/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home&#34;, &#34;Base URL&#34;: &#34;&#34;, &#34;Driver&#34;: null, &#34;Capabilities&#34;: {}}, &#34;tests&#34;: {&#34;tests/api/test_rest_api.py::TestRESTAPI::test_get_users&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_rest_api.py::TestRESTAPI::test_get_users&#34;, &#34;duration&#34;: &#34;113 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_rest_api.py::TestRESTAPI::test_get_users&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;113 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/api/test_rest_api.py::TestRESTAPI::test_get_specific_user&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_rest_api.py::TestRESTAPI::test_get_specific_user&#34;, &#34;duration&#34;: &#34;101 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_rest_api.py::TestRESTAPI::test_get_specific_user&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;101 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/api/test_rest_api.py::TestRESTAPI::test_create_post&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_rest_api.py::TestRESTAPI::test_create_post&#34;, &#34;duration&#34;: &#34;288 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_rest_api.py::TestRESTAPI::test_create_post&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;288 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[1-200]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[1-200]&#34;, &#34;duration&#34;: &#34;158 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[1-200]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;158 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[999-404]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[999-404]&#34;, &#34;duration&#34;: &#34;106 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_rest_api.py::TestRESTAPI::test_user_endpoints_with_params[999-404]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;106 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_users&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_users&#34;, &#34;duration&#34;: &#34;102 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_users&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;102 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Found user: Leanne Graham\n&#34;}], &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_specific_user&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_specific_user&#34;, &#34;duration&#34;: &#34;93 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_get_specific_user&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;93 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 User data structure is correct for user ID: 1\n&#34;}], &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_create_post&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_create_post&#34;, &#34;duration&#34;: &#34;174 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/api/test_simple_api.py::TestSimpleRESTAPI::test_create_post&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;174 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Successfully created post with ID: 101\n&#34;}], &#34;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_nested_graphql_query&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_nested_graphql_query&#34;, &#34;duration&#34;: &#34;489 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_nested_graphql_query&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;489 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nNote: launch_site is null for mission FalconSat\nNote: launch_site is null for mission DemoSat\n\u2713 Nested GraphQL query test passed (handles null fields gracefully)\n&#34;}], &#34;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_graphql_fragments&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_graphql_fragments&#34;, &#34;duration&#34;: &#34;546 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_advanced_graphql.py::TestAdvancedGraphQL::test_graphql_fragments&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;546 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 GraphQL fragments test passed\n&#34;}], &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_spacex_launches_query&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_spacex_launches_query&#34;, &#34;duration&#34;: &#34;405 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_spacex_launches_query&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;405 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 SpaceX launches query test passed\n&#34;}], &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_countries_query&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_countries_query&#34;, &#34;duration&#34;: &#34;187 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_countries_query&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;187 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Countries query test passed\n&#34;}], &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_graphql_with_variables&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_graphql_with_variables&#34;, &#34;duration&#34;: &#34;425 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_basic_graphql.py::TestBasicGraphQL::test_graphql_with_variables&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;425 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 GraphQL with variables test passed\n&#34;}], &#34;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_reasonable_complexity_query&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_reasonable_complexity_query&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_reasonable_complexity_query&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Reasonably complex query works correctly\n&#34;}], &#34;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_field_selection_impact&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_field_selection_impact&#34;, &#34;duration&#34;: &#34;497 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_complexity_simple.py::TestGraphQLComplexitySimple::test_field_selection_impact&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;497 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Field selection affects response size: minimal=55, detailed=341\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_depth_limitation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_depth_limitation&#34;, &#34;duration&#34;: &#34;477 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_depth_limitation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;477 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Query depth limitation test passed\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_complexity&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_complexity&#34;, &#34;duration&#34;: &#34;437 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_complexity&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;437 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Complex query executed successfully\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_malformed_query_handling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_malformed_query_handling&#34;, &#34;duration&#34;: &#34;286 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_malformed_query_handling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;286 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Malformed query 1 properly rejected with 400 status\n\u2713 Malformed query 2 properly rejected with 400 status\n\u2713 Malformed query 3 properly rejected with 400 status\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_field_aliasing_for_security&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_field_aliasing_for_security&#34;, &#34;duration&#34;: &#34;380 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_field_aliasing_for_security&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;380 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Field aliasing works correctly\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_timeout_protection&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_timeout_protection&#34;, &#34;duration&#34;: &#34;88 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_timeout_protection&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;88 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Heavy query handled with status 400\n&#34;}], &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_introspection_limitation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_introspection_limitation&#34;, &#34;duration&#34;: &#34;98 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_introspection_limitation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;98 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Partial introspection query succeeded\n&#34;}], &#34;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_search&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_search::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_search::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;file /Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_google_search.py, line 16\n      def test_google_search(self, playwright_page):\nE       fixture &amp;#x27;playwright_page&amp;#x27; not found\n&amp;gt;       available fixtures: _artifacts_recorder, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _pw_artifacts_folder, _session_scoped_runner, _skip_sensitive, _verify_url, anyio_backend, anyio_backend_name, anyio_backend_options, base_url, browser, browser_channel, browser_context_args, browser_name, browser_type, browser_type_launch_args, cache, capabilities, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, chrome_options, chrome_service, connect_options, context, delete_output_dir, device, doctest_namespace, driver, driver_args, driver_class, driver_kwargs, driver_log, driver_path, edge_options, edge_service, event_loop_policy, extra, extras, firefox_options, firefox_service, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, ie_options, ie_service, include_metadata_in_junit_xml, is_chromium, is_firefox, is_webkit, launch_browser, metadata, monkeypatch, new_context, output_path, page, playwright, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, remote_options, safari_options, safari_service, selenium, sensitive_url, session_capabilities, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, variables, worker_id\n&amp;gt;       use &amp;#x27;pytest --fixtures [testpath]&amp;#x27; for help on them.\n\n/Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_google_search.py:16\n&#34;}], &#34;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_logo_display&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_logo_display::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/playwright/test_google_search.py::TestGoogleSearch::test_google_logo_display::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;file /Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_google_search.py, line 81\n      def test_google_logo_display(self, playwright_page):\nE       fixture &amp;#x27;playwright_page&amp;#x27; not found\n&amp;gt;       available fixtures: _artifacts_recorder, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _pw_artifacts_folder, _session_scoped_runner, _skip_sensitive, _verify_url, anyio_backend, anyio_backend_name, anyio_backend_options, base_url, browser, browser_channel, browser_context_args, browser_name, browser_type, browser_type_launch_args, cache, capabilities, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, chrome_options, chrome_service, connect_options, context, delete_output_dir, device, doctest_namespace, driver, driver_args, driver_class, driver_kwargs, driver_log, driver_path, edge_options, edge_service, event_loop_policy, extra, extras, firefox_options, firefox_service, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, ie_options, ie_service, include_metadata_in_junit_xml, is_chromium, is_firefox, is_webkit, launch_browser, metadata, monkeypatch, new_context, output_path, page, playwright, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, remote_options, safari_options, safari_service, selenium, sensitive_url, session_capabilities, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, variables, worker_id\n&amp;gt;       use &amp;#x27;pytest --fixtures [testpath]&amp;#x27; for help on them.\n\n/Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_google_search.py:81\n&#34;}], &#34;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_navigation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_navigation::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_navigation::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;file /Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_w3schools.py, line 8\n      def test_w3schools_navigation(self, playwright_page):\nE       fixture &amp;#x27;playwright_page&amp;#x27; not found\n&amp;gt;       available fixtures: _artifacts_recorder, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _pw_artifacts_folder, _session_scoped_runner, _skip_sensitive, _verify_url, anyio_backend, anyio_backend_name, anyio_backend_options, base_url, browser, browser_channel, browser_context_args, browser_name, browser_type, browser_type_launch_args, cache, capabilities, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, chrome_options, chrome_service, connect_options, context, delete_output_dir, device, doctest_namespace, driver, driver_args, driver_class, driver_kwargs, driver_log, driver_path, edge_options, edge_service, event_loop_policy, extra, extras, firefox_options, firefox_service, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, ie_options, ie_service, include_metadata_in_junit_xml, is_chromium, is_firefox, is_webkit, launch_browser, metadata, monkeypatch, new_context, output_path, page, playwright, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, remote_options, safari_options, safari_service, selenium, sensitive_url, session_capabilities, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, variables, worker_id\n&amp;gt;       use &amp;#x27;pytest --fixtures [testpath]&amp;#x27; for help on them.\n\n/Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_w3schools.py:8\n&#34;}], &#34;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_search&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_search::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/playwright/test_w3schools.py::TestW3Schools::test_w3schools_search::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;file /Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_w3schools.py, line 36\n      def test_w3schools_search(self, playwright_page):\nE       fixture &amp;#x27;playwright_page&amp;#x27; not found\n&amp;gt;       available fixtures: _artifacts_recorder, _class_scoped_runner, _function_scoped_runner, _module_scoped_runner, _package_scoped_runner, _pw_artifacts_folder, _session_scoped_runner, _skip_sensitive, _verify_url, anyio_backend, anyio_backend_name, anyio_backend_options, base_url, browser, browser_channel, browser_context_args, browser_name, browser_type, browser_type_launch_args, cache, capabilities, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, chrome_options, chrome_service, connect_options, context, delete_output_dir, device, doctest_namespace, driver, driver_args, driver_class, driver_kwargs, driver_log, driver_path, edge_options, edge_service, event_loop_policy, extra, extras, firefox_options, firefox_service, free_tcp_port, free_tcp_port_factory, free_udp_port, free_udp_port_factory, ie_options, ie_service, include_metadata_in_junit_xml, is_chromium, is_firefox, is_webkit, launch_browser, metadata, monkeypatch, new_context, output_path, page, playwright, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, remote_options, safari_options, safari_service, selenium, sensitive_url, session_capabilities, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory, variables, worker_id\n&amp;gt;       use &amp;#x27;pytest --fixtures [testpath]&amp;#x27; for help on them.\n\n/Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/playwright/test_w3schools.py:36\n&#34;}], &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_saucedemo_full_flow&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_saucedemo_full_flow&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_saucedemo_full_flow&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting SauceDemo Complete Flow Test...\n\u2713 Step 1: Navigated to SauceDemo\n\u2713 Step 2: Logged in successfully\n\u2713 Step 3: Added 2 items to cart\n\u2713 Step 4: Navigated to cart\n\u2713 Step 5: Started checkout process\n\u2713 Step 6: Filled checkout information\n\u2713 Step 7: Order completed successfully\n\ud83c\udf89 SauceDemo Complete Flow Test PASSED!\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_orangehrm_updated&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_orangehrm_updated&#34;, &#34;duration&#34;: &#34;00:00:34&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_orangehrm_updated&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:34&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting Updated OrangeHRM Test...\n\u2713 OrangeHRM login page loaded\n\u2713 Logged into OrangeHRM\n\u2713 Dashboard loaded (using oxd-grid-3)\n\u2713 Successfully logged into OrangeHRM\n\ud83c\udf89 Updated OrangeHRM Test PASSED!\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_demoqa_comprehensive&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_demoqa_comprehensive&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_demoqa_comprehensive&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting DemoQA Comprehensive Test...\n\u2713 Text Box form submitted successfully\n\u2713 Check Box test completed\n\ud83c\udf89 DemoQA Comprehensive Test PASSED!\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_herokuapp_reliable&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_herokuapp_reliable&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_automation_friendly.py::TestAutomationFriendly::test_herokuapp_reliable&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;tests.ui.selenium.test_automation_friendly.TestAutomationFriendly object at 0x106407100&amp;gt;\nselenium = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;79265c9c39f86604c1a152c313a58e9d&amp;quot;)&amp;gt;\n\n    def test_herokuapp_reliable(self, selenium):\n        &amp;quot;&amp;quot;&amp;quot;Test reliable HerokuApp examples&amp;quot;&amp;quot;&amp;quot;\n        print(&amp;quot;\ud83d\ude80 Starting HerokuApp Reliable Tests...&amp;quot;)\n    \n        # Test 1: Add/Remove Elements\n        selenium.get(&amp;quot;https://the-internet.herokuapp.com/add_remove_elements/&amp;quot;)\n        WebDriverWait(selenium, 20).until(\n            EC.presence_of_element_located((By.XPATH, &amp;quot;//button[text()=&amp;#x27;Add Element&amp;#x27;]&amp;quot;))\n        )\n    \n        # Add elements\n        add_button = selenium.find_element(By.XPATH, &amp;quot;//button[text()=&amp;#x27;Add Element&amp;#x27;]&amp;quot;)\n        for i in range(3):\n            add_button.click()\n            time.sleep(0.3)\n    \n        # Verify elements added\n        delete_buttons = selenium.find_elements(By.CLASS_NAME, &amp;quot;added-manually&amp;quot;)\n        assert len(delete_buttons) == 3\n        print(f&amp;quot;\u2713 Added {len(delete_buttons)} elements&amp;quot;)\n    \n        # Remove one element\n        delete_buttons[0].click()\n        time.sleep(0.3)\n    \n        # Verify element removed\n        remaining_buttons = selenium.find_elements(By.CLASS_NAME, &amp;quot;added-manually&amp;quot;)\n        assert len(remaining_buttons) == 2\n        print(&amp;quot;\u2713 Successfully removed one element&amp;quot;)\n    \n        # Test 2: Dynamic Loading\n        selenium.get(&amp;quot;https://the-internet.herokuapp.com/dynamic_loading/1&amp;quot;)\n        WebDriverWait(selenium, 20).until(\n            EC.presence_of_element_located((By.XPATH, &amp;quot;//button[text()=&amp;#x27;Start&amp;#x27;]&amp;quot;))\n        )\n    \n        start_button = selenium.find_element(By.XPATH, &amp;quot;//button[text()=&amp;#x27;Start&amp;#x27;]&amp;quot;)\n        start_button.click()\n    \n        # Wait for loading to complete\n        hello_text = WebDriverWait(selenium, 10).until(\n            EC.presence_of_element_located((By.XPATH, &amp;quot;//h4[text()=&amp;#x27;Hello World!&amp;#x27;]&amp;quot;))\n        )\n&amp;gt;       assert hello_text.is_displayed()\nE       assert False\nE        +  where False = is_displayed()\nE        +    where is_displayed = &amp;lt;selenium.webdriver.remote.webelement.WebElement (session=&amp;quot;79265c9c39f86604c1a152c313a58e9d&amp;quot;, element=&amp;quot;f.C7F78D372E3D053D74980C0675BC5CD9.d.B24F8EC887C02EFD45F5ABC201A7CFC8.e.14&amp;quot;)&amp;gt;.is_displayed\n\n../../../ai-qa-automation/tests/ui/selenium/test_automation_friendly.py:239: AssertionError\n\n---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting HerokuApp Reliable Tests...\n\u2713 Added 3 elements\n\u2713 Successfully removed one element\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_login.py::TestLogin::test_successful_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_login.py::TestLogin::test_successful_login&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_login.py::TestLogin::test_successful_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Successful login test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_login.py::TestLogin::test_locked_user_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_login.py::TestLogin::test_locked_user_login&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_login.py::TestLogin::test_locked_user_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Locked user login test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_saucedemo_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_saucedemo_login&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_saucedemo_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting SauceDemo login test...\n\u2713 Navigated to SauceDemo\n\u2713 Page loaded successfully\n\u2713 Login credentials entered and submitted\n\u2713 Successfully redirected to inventory page\n\u2713 Products page title verified\n\ud83c\udf89 SauceDemo login test PASSED!\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_basic_navigation&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_basic_navigation&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_simple_ui.py::TestSimpleUI::test_basic_navigation&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\ud83d\ude80 Starting basic navigation test...\n\u2713 Navigated to httpbin.org\n\u2713 Page loaded successfully\n\u2713 Page content verified\n\ud83c\udf89 Basic navigation test PASSED!\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_structure_verification.py::test_python_paths&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_structure_verification.py::test_python_paths&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_structure_verification.py::test_python_paths&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTesting Python paths...\n\u2713 Added to path: /Users/jag.dhakshi/testhub/ai_testAutomation/ai-qa-automation/tests/ui/selenium/../../../src\n\u2713 Successfully imported config.ui_config\n\u2713 UIConfig loaded - Browser: chrome, Headless: False\n&#34;}], &#34;tests/ui/selenium/test_structure_verification.py::test_selenium_fixture&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_structure_verification.py::test_selenium_fixture&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_structure_verification.py::test_selenium_fixture&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\nTesting Selenium fixture...\n\u2713 Selenium WebDriver is available\n\u2713 Successfully navigated to httpbin.org\n\u2713 Page content verified\n\u2713 Page title: \n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/selenium/test_structure_verification.py::test_test_files_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_structure_verification.py::test_test_files_exist&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_structure_verification.py::test_test_files_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nChecking test files...\n\u2713 Test file exists: tests/ui/selenium/test_simple_ui.py\n\u2713 Test file exists: tests/ui/selenium/test_structure_verification.py\n\u2713 Test file exists: tests/ui/conftest.py\n&#34;}], &#34;tests/ui/selenium/test_structure_verification.py::test_directory_structure&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_structure_verification.py::test_directory_structure&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_structure_verification.py::test_directory_structure&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nChecking directory structure...\n\u2713 Directory exists: tests/ui/selenium\n\u2713 Directory exists: tests/ui/playwright\n\u2713 Directory exists: src/config\n\u2713 Directory exists: src/utils\n\u2713 Directory exists: src/pages\n&#34;}], &#34;tests/ui/selenium/test_structure_verification.py::test_can_run_pytest&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_structure_verification.py::test_can_run_pytest&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_structure_verification.py::test_can_run_pytest&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nTesting basic pytest functionality...\n\u2713 Basic assertion test passed\n&#34;}], &#34;tests/ui/selenium/test_summary.py::TestSummary::test_working_sites_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/selenium/test_summary.py::TestSummary::test_working_sites_summary&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/selenium/test_summary.py::TestSummary::test_working_sites_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\n============================================================\n\ud83c\udfaf WORKING UI AUTOMATION SITES SUMMARY\n============================================================\n\n\ud83d\udccb SauceDemo\n   URL: https://www.saucedemo.com\n   Purpose: E-commerce demo - most reliable\n   Status: \u2705 WORKING\n\n\ud83d\udccb DemoQA\n   URL: https://demoqa.com\n   Purpose: Practice forms and elements\n   Status: \u2705 WORKING\n\n\ud83d\udccb HerokuApp\n   URL: https://the-internet.herokuapp.com\n   Purpose: Various UI challenges\n   Status: \u2705 WORKING\n\n\ud83d\udccb HTTPBin\n   URL: https://httpbin.org/html\n   Purpose: Basic navigation testing\n   Status: \u2705 WORKING\n\n============================================================\n\ud83c\udf89 YOUR UI AUTOMATION FRAMEWORK IS WORKING!\n============================================================\n\u2713 Quick verification: SauceDemo loaded successfully\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_inventory.py::TestInventory::test_inventory_page_load&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_inventory.py::TestInventory::test_inventory_page_load&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_inventory.py::TestInventory::test_inventory_page_load&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Inventory page load test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_inventory.py::TestInventory::test_add_product_to_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_inventory.py::TestInventory::test_add_product_to_cart&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_inventory.py::TestInventory::test_add_product_to_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Add product to cart test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_inventory.py::TestInventory::test_inventory_sorting&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_inventory.py::TestInventory::test_inventory_sorting&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_inventory.py::TestInventory::test_inventory_sorting&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Inventory sorting placeholder test\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_login.py::TestLogin::test_successful_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_login.py::TestLogin::test_successful_login&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_login.py::TestLogin::test_successful_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Successful login test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_login.py::TestLogin::test_locked_user_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_login.py::TestLogin::test_locked_user_login&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_login.py::TestLogin::test_locked_user_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Locked user login test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_login.py::TestLogin::test_invalid_credentials&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_login.py::TestLogin::test_invalid_credentials&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_login.py::TestLogin::test_invalid_credentials&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Invalid credentials test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_login.py::TestLogin::test_logout_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_login.py::TestLogin::test_logout_functionality&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_login.py::TestLogin::test_logout_functionality&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Logout functionality test passed\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_structure_verification.py::test_python_paths&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_structure_verification.py::test_python_paths&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_structure_verification.py::test_python_paths&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Successfully imported config.ui_config\n\u2713 Successfully imported utils.selenium_helpers\n&#34;}], &#34;tests/ui/test_structure_verification.py::test_selenium_fixture&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_structure_verification.py::test_selenium_fixture&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_structure_verification.py::test_selenium_fixture&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;---------------------------- Captured stdout setup -----------------------------\n\ud83d\ude80 Setting up Chrome WebDriver...\n\u2713 Running in visible mode\n\u2713 Chrome WebDriver setup successful\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Selenium WebDriver is available\n\u2713 Basic Selenium navigation works\n--------------------------- Captured stdout teardown ---------------------------\n\u2713 WebDriver closed\n&#34;}], &#34;tests/ui/test_structure_verification.py::test_test_files_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/ui/test_structure_verification.py::test_test_files_exist&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_structure_verification.py::test_test_files_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;def test_test_files_exist():\n        &amp;quot;&amp;quot;&amp;quot;Verify test files exist&amp;quot;&amp;quot;&amp;quot;\n        test_files = [\n            &amp;quot;tests/ui/selenium/test_simple_ui.py&amp;quot;,\n            &amp;quot;tests/ui/selenium/test_automation_friendly.py&amp;quot;,\n            &amp;quot;tests/ui/selenium/test_reliable_sites.py&amp;quot;,\n            &amp;quot;tests/ui/conftest.py&amp;quot;\n        ]\n    \n        for file_path in test_files:\n&amp;gt;           assert os.path.exists(file_path), f&amp;quot;Missing test file: {file_path}&amp;quot;\nE           AssertionError: Missing test file: tests/ui/selenium/test_reliable_sites.py\nE           assert False\nE            +  where False = &amp;lt;function exists at 0x1028572e0&amp;gt;(&amp;#x27;tests/ui/selenium/test_reliable_sites.py&amp;#x27;)\nE            +    where &amp;lt;function exists at 0x1028572e0&amp;gt; = &amp;lt;module &amp;#x27;posixpath&amp;#x27; (frozen)&amp;gt;.exists\nE            +      where &amp;lt;module &amp;#x27;posixpath&amp;#x27; (frozen)&amp;gt; = os.path\n\ntests/ui/test_structure_verification.py:48: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\n\u2713 Test file exists: tests/ui/selenium/test_simple_ui.py\n\u2713 Test file exists: tests/ui/selenium/test_automation_friendly.py\n&#34;}], &#34;tests/ui/test_structure_verification.py::test_directory_structure&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/ui/test_structure_verification.py::test_directory_structure&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/ui/test_structure_verification.py::test_directory_structure&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u2713 Directory exists: tests/ui/selenium\n\u2713 Directory exists: tests/ui/playwright\n\u2713 Directory exists: src/config\n\u2713 Directory exists: src/utils\n\u2713 Directory exists: src/pages\n\u2713 Directory exists: reports/screenshots\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;test_report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
