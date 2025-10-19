@@ -192,51 +192,50 @@ class TestAutomationFriendly:
         print("✓ Check Box test completed")
         
         print("🎉 DemoQA Comprehensive Test PASSED!")
-    
     def test_herokuapp_reliable(self, selenium):
         """Test reliable HerokuApp examples"""
         print("🚀 Starting HerokuApp Reliable Tests...")
-        
-        # Test 1: Add/Remove Elements
+
+         # Test 1: Add/Remove Elements
         selenium.get("https://the-internet.herokuapp.com/add_remove_elements/")
         WebDriverWait(selenium, 20).until(
             EC.presence_of_element_located((By.XPATH, "//button[text()='Add Element']"))
         )
-        
+
         # Add elements
         add_button = selenium.find_element(By.XPATH, "//button[text()='Add Element']")
         for i in range(3):
             add_button.click()
             time.sleep(0.3)
-        
+
         # Verify elements added
         delete_buttons = selenium.find_elements(By.CLASS_NAME, "added-manually")
         assert len(delete_buttons) == 3
         print(f"✓ Added {len(delete_buttons)} elements")
-        
+
         # Remove one element
         delete_buttons[0].click()
         time.sleep(0.3)
-        
+
         # Verify element removed
         remaining_buttons = selenium.find_elements(By.CLASS_NAME, "added-manually")
         assert len(remaining_buttons) == 2
         print("✓ Successfully removed one element")
-        
-        # Test 2: Dynamic Loading
+
+        # Test 2: Dynamic Loading - FIXED VERSION
         selenium.get("https://the-internet.herokuapp.com/dynamic_loading/1")
         WebDriverWait(selenium, 20).until(
             EC.presence_of_element_located((By.XPATH, "//button[text()='Start']"))
         )
-        
+
         start_button = selenium.find_element(By.XPATH, "//button[text()='Start']")
         start_button.click()
-        
-        # Wait for loading to complete
+
+        # Wait for loading to complete AND for the element to be visible
         hello_text = WebDriverWait(selenium, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//h4[text()='Hello World!']"))
+            EC.visibility_of_element_located((By.XPATH, "//h4[text()='Hello World!']"))
         )
-        assert hello_text.is_displayed()
-        print("✓ Dynamic loading test completed")
         
-        print("🎉 HerokuApp Reliable Tests PASSED!")
+        # The element should now be visible
+        assert hello_text.is_displayed()
+        print("✓ Dynamic loading test completed successfully")

@@ -1,0 +1,54 @@
+***RUN 
+# Navigate to project root
+cd /Users/jag.dhakshi/testhub/ai-qa-automation
+
+# Run pytest with the correct path
+pytest tests/api/test_rest_api.py -V
+# Navigate to project root
+cd /Users/jag.dhakshi/testhub/ai-qa-automation
+
+# Run the fixed security test
+pytest tests/graphql/test_graphql_security.py::TestGraphQLSecurity::test_query_complexity -v
+
+# Run all security tests
+pytest tests/graphql/test_graphql_security.py -v
+
+# Run the simpler complexity test
+pytest tests/graphql/test_graphql_complexity_simple.py -v
+
+# Run all GraphQL tests
+pytest tests/graphql/ -v
+
+*******RUN UI TEST
+
+# Navigate to project root
+cd /Users/jag.dhakshi/testhub/ai-qa-automation
+
+# Create reports directory
+#mkdir -p reports/screenshots
+
+# Run Selenium tests
+pytest tests/ui/selenium/ -v
+
+# Run Playwright tests  
+pytest tests/ui/playwright/ -v
+
+# Run all UI tests
+pytest tests/ui/ -V
+pytest tests/ui/selenium/test_simple_ui.py -vi
+
+***
+# Navigate to project root (IMPORTANT!)
+cd /Users/jag.dhakshi/testhub/ai-qa-automation
+
+# Run the structure verification test first
+pytest tests/ui/selenium/test_structure_verification.py -v -s
+
+# Run the simple UI test
+pytest tests/ui/selenium/test_simple_ui.py -v -s
+
+# Run all UI tests
+pytest tests/ui/selenium/ -v
+
+# See how many tests are passing
+pytest tests/ui/selenium/ --tb=no -q
